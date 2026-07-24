@@ -1,8 +1,25 @@
 aid: carro
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carro.png
 name: Carro
-description: 'Carro is a company surfaced as a portfolio company of softbank-vision-fund and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Carro is a Singapore-headquartered used-car marketplace and automotive fintech platform,
+  founded in 2015 and widely described as Southeast Asia''s largest online used-car retailer. It operates
+  a data-driven marketplace for buying and selling pre-owned vehicles across Singapore, Indonesia, Thailand,
+  Malaysia and Japan, and pairs it with adjacent services: car financing (Genie Financial Services), motor
+  insurance, aftersales servicing and workshops (Carro Care), and car subscription. Carro reached unicorn
+  status in 2021 in a round led by SoftBank Vision Fund 2. It was added to the API Evangelist network as
+  a portfolio company of SoftBank Vision Fund; as of this pass Carro publishes no public developer portal,
+  API documentation, or machine-readable API definition, so this profile is company-identity only.'
 url: https://raw.githubusercontent.com/api-evangelist/carro/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Automotive
+- Used Cars
+- Marketplace
+- Fintech
+- Insurance
+- Southeast Asia
+common:
+- type: Website
+  url: https://carro.co
+  name: Carro
+- type: DomainSecurity
+  url: security/carro-domain-security.yml
+  name: Domain Security Posture
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
